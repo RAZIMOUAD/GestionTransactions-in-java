@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.controller.TransactionController"
+      spacing="10" alignment="CENTER" style="-fx-padding: 20;">
+
+    <Label text="Effectuer une Transaction" style="-fx-font-size: 20px;"/>
+
+    <TextField fx:id="refTransactionField" promptText="Référence Transaction"/>
+    <TextField fx:id="compteSourceField" promptText="Compte Source"/>
+    <TextField fx:id="compteDestinationField" promptText="Compte Destination"/>
+    <TextField fx:id="montantField" promptText="Montant"/>
+
+    <Button text="Effectuer" onAction="#effectuerTransaction"/>
+
+    <Label fx:id="resultLabel" text="Résultat : " style="-fx-font-size: 14px;"/>
+</VBox>
